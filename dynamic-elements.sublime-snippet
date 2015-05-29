@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+<a2:carousel name="carousel1" width="160" height="204" axisRotation="90" type="3d" maxDimension="155" count="5" radius="500" dppid="rvp,rvc,10"
+	cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+	style="position:absolute; left:0; top:263px; cursor:pointer; overflow:hidden;"
+>
+	<a2:eventhandler event="expired" from="scene_transition" action="start"/>
+	<a2:eventhandler event="selected" from="up" action="previous"/>
+	<a2:eventhandler event="selected" from="down" action="next"/>
+	<a2:eventhandler event="selected" from="up" action="stop"/>
+	<a2:eventhandler event="selected" from="down" action="stop"/>
+</a2:carousel>
+
+<a2:product style="position:absolute; width:160px; height:82px; left:0; top:503px;" dppid="rvp,rvc,10"
+	imagestyle="display:none" brandStyle="display:none"
+	productstyle="position:static; width:150px; max-height:55px; text-transform:uppercase; text-align:center; padding:0 5px; font:700 16px/18px 'Open Sans Condensed', Arial, sans-serif; color:#000; overflow:hidden;"
+	priceStyle="position:static; width:150px; text-align:center; padding:0 5px; font:700 20px/22px 'Open Sans Condensed', Arial, sans-serif; color:#e31f26; overflow:hidden;"
+>
+	<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+</a2:product>
+
+<a2:selector name="up" width="19" height="16" style="position:absolute; left:71px; top:247px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+<a2:selector name="down" width="19" height="16" style="position:absolute; left:71px; top:467px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+
+<a2:button width="124" height="29" style="position:absolute; left:18px; top:178px;" src="http://cdn1.steelhousemedia.com/files/docs/">
+	<a2:eventhandler from="carousel1" event="adunitChanged" action="updateClick"/>
+</a2:button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2dynamic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

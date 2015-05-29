@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<a2:carousel name="carousel1" width="${1:160}" height="${2:204}" axisRotation="90" type="3d" maxDimension="${3:155}" count="${4:5}" radius="${5:500}" 
+	cycle="${6:1}" cycleShowcaseDuration="${7:2000}" rotationDuration="${8:750}"
+	style="position:absolute; left:${9:0}px; top:${10:263}px; cursor:pointer; overflow:hidden;"
+>
+	<a2:eventhandler event="expired" from="scene_transition" action="start"/>
+	<a2:eventhandler event="selected" from="up" action="previous"/>
+	<a2:eventhandler event="selected" from="down" action="next"/>
+	<a2:eventhandler event="selected" from="up" action="stop"/>
+	<a2:eventhandler event="selected" from="down" action="stop"/>
+	<a2:product name="${11:name}" brand="${12:brand}" price="${13:price}" click="${14:url}" src="http://cdn.steelhousemedia.com/files/docs/"/>
+</a2:carousel>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2carouselhardcoded</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

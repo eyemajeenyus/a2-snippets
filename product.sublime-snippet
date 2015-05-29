@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<a2:product style="position:absolute; width:${1:160}px; height:${2:82}px; left:${3:0}; top:${4:503}px;" dppid="${5:rvp,rvc,10}"
+	imagestyle="display:none" brandStyle="display:none"
+	productstyle="position:static; width:150px; max-height:55px; text-transform:uppercase; text-align:center; padding:0 5px; font:700 16px/18px 'Open Sans Condensed', Arial, sans-serif; color:#000; overflow:hidden;"
+	priceStyle="position:static; width:150px; text-align:center; padding:0 5px; font:700 20px/22px 'Open Sans Condensed', Arial, sans-serif; color:#e31f26; overflow:hidden;"
+>
+	<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+</a2:product>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2product</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

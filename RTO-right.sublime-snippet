@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+<a2:rto width="${1:490}" height="${2:342}" template="default_right_rto"
+	onsiteAttributes="{
+		ad_page_pos:'absolute',
+		adShowSlice: ${3:46},
+		ad_tran_time: '0.5s',
+		onsite_adbox_style: 'top:300px; z-index:99999',
+		onsite_background_style: 'background:url(http://cdn1.steelhousemedia.com/files/docs/) no-repeat;',
+		onsite_thumb_style: 'background:url(http://cdn1.steelhousemedia.com/files/docs/) no-repeat; overflow:hidden; position:absolute; left:${4:0}; top:${5:8}px; width:${6:46}px; height:${7:46}px; z-index:1000;',
+		rto_more_button: '0 0',
+		rto_hide_button: '-${8:46}px 0'
+	}"
+	target="self"
+>
+
+</a2:rto>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2rtoright</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

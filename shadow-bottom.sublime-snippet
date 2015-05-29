@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+-webkit-box-shadow: 0 8px 6px -6px #555; -moz-box-shadow: 0 8px 6px -6px #555; box-shadow: 0 8px 6px -6px #555;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2shadowbottom</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<a2:carousel name="${1:carousel1}" width="${2:160}" height="${3:204}" axisRotation="${4:90}" type="3d" maxDimension="${5:155}" count="${6:5}" radius="${7:500}" dppid="${8:rvp,rvc,10}"
+	cycle="${9:1}" cycleShowcaseDuration="${10:2000}" rotationDuration="${11:750}"
+	style="position:absolute; left:${12:0}; top:${13:263}px; cursor:pointer; overflow:hidden;"
+>
+	<a2:eventhandler event="expired" from="scene_transition" action="start"/>
+	<a2:eventhandler event="selected" from="up" action="previous"/>
+	<a2:eventhandler event="selected" from="down" action="next"/>
+	<a2:eventhandler event="selected" from="up" action="stop"/>
+	<a2:eventhandler event="selected" from="down" action="stop"/>
+</a2:carousel>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2carousel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

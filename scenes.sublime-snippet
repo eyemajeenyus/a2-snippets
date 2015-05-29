@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<a2:scenes width="${1:160}" height="${2:600}"
+	paginationStyle="position:absolute; left:${3:125}px; top:${4:3}px; z-index:999;"
+	paginationLiStyle="width:${5:10}px; height:${6:10}px; ${7:margin-right:1px;} background-image:url(http://cdn1.steelhousemedia.com/files/docs/);"
+	paginationLiSelectedStyle="background-image:url(http://cdn1.steelhousemedia.com/files/docs/);"
+>
+	<a2:scene width="${8:160}" height="${9:600}" transition="${10:3}">
+	</a2:scene>
+	<a2:scene width="${11:160}" height="${12:600}">
+	</a2:scene>
+</a2:scenes>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2scenes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

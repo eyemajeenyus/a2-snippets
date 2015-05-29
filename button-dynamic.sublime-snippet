@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<a2:button width="${1:124}" height="${2:29}" style="position:absolute; left:${3:18}px; top:${4:178}px;" src="http://cdn1.steelhousemedia.com/files/docs/">
+	<a2:eventhandler from="carousel1" event="adunitChanged" action="updateClick"/>
+</a2:button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2buttondynamic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
