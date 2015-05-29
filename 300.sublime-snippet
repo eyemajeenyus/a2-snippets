@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<!-- 300 -->
+<a2:frame width="300" height="250" click="${1:url}">
+	<a2:timer name="t1" ms="1000"/>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="t1" action="fadeIn" duration="1000"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	</a2:layer>
+	<a2:button width="119" height="22" style="position:absolute; left:90px; top:220px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+</a2:frame>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2300</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
