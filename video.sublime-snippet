@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<a2:video id="${1:E3xeFP5aacE}" provider="youtube" mute="true" controls="false" autoplay="true" start="0" duration="${2:15}" width="${3:330}" height="${4:186}"
+	style="position:absolute; left:${5:35}px; top:${6:142}px;"
+	poster="http://cdn1.steelhousemedia.com/files/docs/"
+/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2video</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

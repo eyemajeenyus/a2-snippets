@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<a2:eventhandler from="${1:from}" event="${2:event}" action="${3:action}"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2event</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

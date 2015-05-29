@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<a2:button width="${1:119}" height="${2:22}" style="position:absolute; left:${3:600}px; top:${4:30}px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2button</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

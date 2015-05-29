@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<a2:layer width="${1:160}" height="${2:600}" show="false" style="position:absolute; left:0; top:0;">
+	<a2:eventhandler event="expired" from="t1" action="fadeIn" duration="1000"/>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+</a2:layer>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2layer</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<a2:counter name="c1" width="${1:91}" height="${2:22}" style="position:absolute; left:${3:34}px; top:${4:444}px; font:20px/22px 'Open Sans', Arial; color:#221f1f; text-align:center;" iab="false"
+	dayStyle="position:absolute; left:0; top:2px; width:24px;"
+	hourStyle="position:absolute; left:34px; top:2px; width:24px;"
+	minuteStyle="position:absolute; left:67px; top:2px; width:24px;"
+	secondStyle="display:none;"
+	duration="campaign"
+/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2counter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
