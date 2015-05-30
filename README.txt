@@ -6,6 +6,18 @@ a2300 - 300x250 frame / timer / image / layer / button
 
 a2728 - 728x90 frame / timer / image / layer / button
 
+a2160frame - 160x600 frame / scenes / scene / image / scene / image / carousel / product / selector /selector / button / eventhandler
+
+a2300frame - 300x250 frame / scenes / scene / image / scene / image / carousel / product / selector /selector / button / eventhandler
+
+a2728frame - 728x90 frame / scenes / scene / image / scene / image / carousel / product / selector /selector / button / eventhandler
+
+a2160layerframe - 160x600 frame / layer / eventhandler / image / layer / eventhandler / image / carousel / product / selector /selector / button / eventhandler
+
+a2300layerframe - 300x250 frame / layer / eventhandler / image / layer / eventhandler / image / carousel / product / selector /selector / button / eventhandler
+
+a2728layerframe - 728x90 frame / layer / eventhandler / image / layer / eventhandler / image / carousel / product / selector /selector / button / eventhandler
+
 a2timer - timer
 
 a2timerdelay - timer / two eventhandlers -- to delay hover to reveal carousels
@@ -53,3 +65,4 @@ a2rtoright - right RTO
 a2rtoleft - left RTO
 
 a2dpp - custom dpp category 
+

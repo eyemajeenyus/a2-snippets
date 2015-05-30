@@ -1,0 +1,55 @@
+<snippet>
+	<content><![CDATA[
+<!-- 728 -->
+<a2:frame width="728" height="90" click="">
+	<a2:timer name="scene-transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag-s1-on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-off" action="stop"/>		
+	</a2:timer>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	<!-- Scene 1 -->
+	<a2:layer width="728" height="90" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeIn" duration="300"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s1-on" width="11" height="11" style="position:absolute; left:64px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s1-off" width="11" height="11" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	</a2:layer> <!-- / Scene 1 -->
+	<!-- Scene 2 -->
+	<a2:layer width="728" height="90" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeOut" duration="300"/>
+		<a2:img width="150" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:carousel name="carousel1" width="72" height="90" axisRotation="0" type="3d" maxDimension="90" count="5" radius="500" dppid="rvp,rvc,10"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:462px; top:0; cursor:pointer; overflow:hidden;"
+		>
+			<a2:eventhandler event="expired" from="scene-transition" action="start"/>
+			<a2:eventhandler event="selected" from="left" action="next"/>
+			<a2:eventhandler event="selected" from="right" action="previous"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:175px; height:51px; left:534px; top:24px;" dppid="rvp,rvc,10"
+			imagestyle="display:none" brandStyle="display:none" 
+			productstyle="position:absolute; width:90px; height:51px; text-align:center; padding:0 15px; font:400 13px/17px 'Oswald', Arial, sans-serif; text-transform:uppercase; letter-spacing:1px; color:#212121; overflow:hidden;"
+			priceStyle="position:absolute; right:0; bottom:5px; text-align:center; padding:0 2px 14px 0; font:400 17px/19px 'Oswald', Arial, sans-serif; letter-spacing:1px; color:#212121; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<a2:selector name="left" width="12" height="19" style="position:absolute; left:462px; top:36px; z-index:500;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="right" width="12" height="19" style="position:absolute; left:522px; top:36px; z-index:500;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s2-off" width="11" height="11" style="position:absolute; left:64px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s2-on" width="11" height="11" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	</a2:layer> <!-- / Scene 2 -->
+</a2:frame>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2728layerframe</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

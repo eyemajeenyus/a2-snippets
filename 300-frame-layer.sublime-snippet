@@ -1,0 +1,54 @@
+<snippet>
+	<content><![CDATA[
+<!-- 300 -->
+<a2:frame width="300" height="250" click="">
+	<a2:timer name="scene-transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag-s1-on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-off" action="stop"/>		
+	</a2:timer>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	<!-- Scene 1 -->
+	<a2:layer width="300" height="250" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeIn" duration="300"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s1-on" width="11" height="11" style="position:absolute; left:252px; top:234px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s1-off" width="11" height="11" style="position:absolute; left:263px; top:234px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	</a2:layer> <!-- / Scene 1 -->
+	<!-- Scene 2 -->
+	<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeOut" duration="300"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:carousel name="carousel1" width="150" height="186" axisRotation="0" type="3d" maxDimension="186" count="5" radius="500" dppid="rvp,rvc,10"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; right:0; top:42px; cursor:pointer; overflow:hidden;"
+		>
+			<a2:eventhandler event="expired" from="scene-transition" action="start"/>
+			<a2:eventhandler event="selected" from="left" action="next"/>
+			<a2:eventhandler event="selected" from="right" action="previous"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:150px; height:30px; left:0; top:162px;" dppid="rvp,rvc,10"
+			imagestyle="display:none" brandStyle="display:none" productstyle="display:none;"
+			priceStyle="position:absolute; width:140px; height:33px; text-align:center; padding:0 5px; font:400 22px/34px 'Oswald', Arial, sans-serif; letter-spacing:1px; color:#212121; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<a2:selector name="left" width="14" height="22" style="position:absolute; left:152px; top:124px; z-index:500;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="right" width="14" height="22" style="position:absolute; left:284px; top:124px; background-position:14px 0; z-index:500;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s2-off" width="11" height="11" style="position:absolute; left:252px; top:234px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+		<a2:selector name="pag-s2-on" width="11" height="11" style="position:absolute; left:263px; top:234px;" src="http://cdn1.steelhousemedia.com/files/docs/"/>
+	</a2:layer> <!-- / Scene 2 -->
+</a2:frame>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2300layerframe</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
