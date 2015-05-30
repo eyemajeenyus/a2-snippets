@@ -66,3 +66,7 @@ a2rtoleft - left RTO
 
 a2dpp - custom dpp category 
 
+
+TEMPLATE TAB TRIGGERS
+
+a2abercrombiesummer - Abercrombie summer template - all sizes
