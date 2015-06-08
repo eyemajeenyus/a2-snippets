@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 <!-- 160 -->
-<a2:frame width="160" height="600" click="http://ad.doubleclick.net/ddm/clk/288041283;115019460;y?http://www.abercrombie.com/shop/us/womens-jeans?cmp=DIS:_ANF_STH_DynamicDesktop">
+<a2:frame width="160" height="600" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-new-arrivals?cmp=DIS:_ANF_STH_DynamicDesktop">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> </link>
 	<a2:timer name="logo-s1-bg" ms="500"/>
 	<a2:timer name="logo-s1-txt" ms="1000"/>
@@ -23,8 +23,8 @@
 		<a2:eventhandler event="expired" from="scene-transition" action="fadeOut" duration="700"/>
 		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeOut" duration="300"/>
 		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeIn" duration="300"/>
-		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo1.png"/>
-		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer1.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo-s1.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer-s1.png"/>
 		<a2:selector name="pag-s1-on" width="11" height="11" style="position:absolute; left:69px; top:578px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/pag-on.png"/>
 		<a2:selector name="pag-s1-off" width="11" height="11" style="position:absolute; left:80px; top:578px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/pag-off.png"/>
 	</a2:layer> <!-- / Scene 1 Content -->
@@ -37,12 +37,13 @@
 		<!-- Scene 2 Content -->
 		<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0;">
 			<a2:eventhandler event="expired" from="content-s2" action="fadeIn" duration="700"/>
-			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo2.png"/>
-			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer2.png"/>
+			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo-s2.png"/>
+			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer-s2.png"/>
+			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/price-now.png"/>
 			<a2:carousel name="carousel1" width="148" height="184" axisRotation="0" type="3d" maxDimension="184" count="5" radius="500" dppid="rvp,rvc,10"
 				cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
 				style="position:absolute; left:6px; top:221px; cursor:pointer; overflow:hidden;"
-				urlprefix="http://ad.doubleclick.net/ddm/clk/288041283;115019460;y?"
+				urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
 				urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
 			>
 				<a2:eventhandler event="expired" from="content-s2" action="start"/>
@@ -53,7 +54,7 @@
 				<a2:eventhandler event="selected" from="left" action="stop"/>
 				<a2:eventhandler event="selected" from="right" action="stop"/>
 			</a2:carousel>
-			<a2:product style="position:absolute; width:160px; height:33px; left:0; top:461px;" dppid="rvp,rvc,10"
+			<a2:product style="position:absolute; width:160px; height:33px; left:0; top:465px;" dppid="rvp,rvc,10"
 				imagestyle="display:none" brandStyle="display:none" productstyle="display:none;"
 				priceStyle="position:absolute; width:150px; height:33px; text-align:center; padding:0 5px; font:400 22px/24px 'Oswald', Arial, sans-serif; letter-spacing:1px; color:#212121; overflow:hidden;"
 			>
@@ -65,6 +66,8 @@
 			<a2:layer width="148" height="184" show="false" style="position:absolute; left:6px; top:221px; z-index:501;">
 				<a2:eventhandler event="expired" from="carousel-details" action="fadeIn" duration="300"/>
 				<a2:eventhandler event="exited" from="carousel-details-exit" action="fadeOut" duration="300"/>
+				<a2:eventhandler event="entered" from="left-details" action="show"/>
+				<a2:eventhandler event="entered" from="right-details" action="show"/>
 				<a2:eventhandler event="selected" from="pag-s2-off" action="fadeOut" duration="300"/>
 				<a2:product style="position:absolute; width:148px; height:184px; left:0; top:0; background-color:#212121; opacity:.8; filter:alpha(opacity=80);" dppid="rvp,rvc,10"
 					imagestyle="display:none" brandStyle="display:none"  priceStyle="display:none;" 
@@ -84,12 +87,16 @@
 	<a2:layer width="14" height="22" show="false" style="position:absolute; left:7px; top:302px; z-index:502;">
 		<a2:eventhandler event="expired" from="carousel-details" action="fadeIn" duration="300"/>
 		<a2:eventhandler event="exited" from="carousel-details-exit" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="entered" from="left-details" action="show"/>
+		<a2:eventhandler event="entered" from="right-details" action="show"/>
 		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeOut" duration="300"/>
 		<a2:selector name="left-details" width="14" height="22" style="position:absolute; left:0; top:0; background-position:0 22px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/arrows.png"/>
 	</a2:layer>
 	<a2:layer width="14" height="22" show="false" style="position:absolute; left:138px; top:302px; z-index:502;">
 		<a2:eventhandler event="expired" from="carousel-details" action="fadeIn" duration="300"/>
 		<a2:eventhandler event="exited" from="carousel-details-exit" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="entered" from="right-details" action="show"/>
+		<a2:eventhandler event="entered" from="left-details" action="show"/>
 		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeOut" duration="300"/>
 		<a2:selector name="right-details" width="14" height="22" style="position:absolute; left:0; top:0; background-position:14px 22px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/arrows.png"/>
 	</a2:layer> <!-- / Product Detail Selectors -->
@@ -105,13 +112,13 @@
 		<a2:eventhandler event="expired" from="logo-s1-txt" action="fadeIn" duration="500"/>
 		<a2:img width="160" height="61" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/logo-text.png"/>
 	</a2:layer> <!-- / Logo -->
-	<img src="${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019460;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
-	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330627/skeleton.js"> </script>
+	<img src="${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330628/skeleton.js"> </script>
 	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=${aid},${cid},${eid},${ms},${crid}"> </script>
 </a2:frame>
 
 <!-- 728 -->
-<a2:frame width="728" height="90" click="http://ad.doubleclick.net/ddm/clk/288041283;115019460;y?http://www.abercrombie.com/shop/us/womens-jeans?cmp=DIS:_ANF_STH_DynamicDesktop">
+<a2:frame width="728" height="90" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-new-arrivals?cmp=DIS:_ANF_STH_DynamicDesktop">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> </link>
 	<a2:timer name="logo-s1-bg" ms="500"/>
 	<a2:timer name="logo-s1-txt" ms="1000"/>
@@ -142,8 +149,8 @@
 		<a2:eventhandler event="expired" from="scene-transition" action="fadeOut" duration="700"/>
 		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeOut" duration="300"/>
 		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeIn" duration="300"/>
-		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/promo1.png"/>
-		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/disclaimer1.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/promo-s1.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/disclaimer-s1.png"/>
 		<a2:selector name="pag-s1-on" width="11" height="11" style="position:absolute; left:64px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/pag-on.png"/>
 		<a2:selector name="pag-s1-off" width="11" height="11" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/pag-off.png"/>
 	</a2:layer> <!-- / Scene 1 Content -->
@@ -157,12 +164,13 @@
 		<!-- Scene 2 Content -->
 		<a2:layer width="728" height="90" show="false" style="position:absolute; left:0; top:0;">
 			<a2:eventhandler event="expired" from="content-s2" action="fadeIn" duration="700"/>
-			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/promo2.png"/>
-			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/disclaimer2.png"/>
+			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/promo-s2.png"/>
+			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/disclaimer-s2.png"/>
+			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/price-now.png"/>
 			<a2:carousel name="carousel1" width="72" height="90" axisRotation="0" type="3d" maxDimension="90" count="5" radius="500" dppid="rvp,rvc,10"
 				cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
 				style="position:absolute; left:462px; top:0; cursor:pointer; overflow:hidden;"
-				urlprefix="http://ad.doubleclick.net/ddm/clk/288041283;115019460;y?"
+				urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
 				urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
 			>
 				<a2:eventhandler event="expired" from="content-s2" action="start"/>
@@ -174,7 +182,7 @@
 			<a2:product style="position:absolute; width:175px; height:51px; left:534px; top:24px;" dppid="rvp,rvc,10"
 				imagestyle="display:none" brandStyle="display:none" 
 				productstyle="position:absolute; width:90px; height:51px; text-align:center; padding:0 15px; font:400 13px/17px 'Oswald', Arial, sans-serif; text-transform:uppercase; letter-spacing:1px; color:#212121; overflow:hidden;"
-				priceStyle="position:absolute; right:0; bottom:5px; text-align:center; padding:0 2px 14px 0; font:400 17px/19px 'Oswald', Arial, sans-serif; letter-spacing:1px; color:#212121; overflow:hidden;"
+				priceStyle="position:absolute; right:0; bottom:0; text-align:center; padding:0 2px 14px 0; font:400 17px/19px 'Oswald', Arial, sans-serif; letter-spacing:1px; color:#212121; overflow:hidden;"
 			>
 				<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
 			</a2:product>
@@ -184,13 +192,13 @@
 		<a2:selector name="pag-s2-off" width="11" height="11" style="position:absolute; left:64px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/pag-off.png"/>
 		<a2:selector name="pag-s2-on" width="11" height="11" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/pag-on.png"/>
 	</a2:layer> <!-- / Scene 2 -->
-	<img src="${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019460;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
-	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330627/skeleton.js"> </script>
+	<img src="${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330628/skeleton.js"> </script>
 	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=${aid},${cid},${eid},${ms},${crid}"> </script>
 </a2:frame>
 
 <!-- 300 -->
-<a2:frame width="300" height="250" click="http://ad.doubleclick.net/ddm/clk/288041283;115019460;y?http://www.abercrombie.com/shop/us/womens-jeans?cmp=DIS:_ANF_STH_DynamicDesktop">
+<a2:frame width="300" height="250" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-new-arrivals?cmp=DIS:_ANF_STH_DynamicDesktop">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> </link>
 	<a2:timer name="logo-s1-bg" ms="500"/>
 	<a2:timer name="logo-s1-txt" ms="1000"/>
@@ -212,8 +220,8 @@
 		<a2:eventhandler event="expired" from="scene-transition" action="fadeOut" duration="700"/>
 		<a2:eventhandler event="selected" from="pag-s1-off" action="fadeOut" duration="300"/>
 		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeIn" duration="300"/>
-		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/promo1.png"/>
-		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/disclaimer1.png"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/promo-s1.png"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/disclaimer-s1.png"/>
 		<a2:selector name="pag-s1-on" width="11" height="11" style="position:absolute; left:252px; top:234px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/300/pag-on.png"/>
 		<a2:selector name="pag-s1-off" width="11" height="11" style="position:absolute; left:263px; top:234px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/300/pag-off.png"/>
 	</a2:layer> <!-- / Scene 1 Content -->
@@ -226,12 +234,13 @@
 		<!-- Scene 2 Content -->
 		<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
 			<a2:eventhandler event="expired" from="content-s2" action="fadeIn" duration="700"/>
-			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/promo2.png"/>
-			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/disclaimer1.png"/>
+			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/promo-s2.png"/>
+			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/disclaimer-s2.png"/>
+			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/300/price-now.png"/>
 			<a2:carousel name="carousel1" width="150" height="186" axisRotation="0" type="3d" maxDimension="186" count="5" radius="500" dppid="rvp,rvc,10"
 				cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
 				style="position:absolute; right:0; top:42px; cursor:pointer; overflow:hidden;"
-				urlprefix="http://ad.doubleclick.net/ddm/clk/288041283;115019460;y?"
+				urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
 				urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
 			>
 				<a2:eventhandler event="expired" from="content-s2" action="start"/>
@@ -242,7 +251,7 @@
 				<a2:eventhandler event="selected" from="left" action="stop"/>
 				<a2:eventhandler event="selected" from="right" action="stop"/>
 			</a2:carousel>
-			<a2:product style="position:absolute; width:150px; height:30px; left:0; top:162px;" dppid="rvp,rvc,10"
+			<a2:product style="position:absolute; width:150px; height:30px; left:0; top:172px;" dppid="rvp,rvc,10"
 				imagestyle="display:none" brandStyle="display:none" productstyle="display:none;"
 				priceStyle="position:absolute; width:140px; height:33px; text-align:center; padding:0 5px; font:400 22px/34px 'Oswald', Arial, sans-serif; letter-spacing:1px; color:#212121; overflow:hidden;"
 			>
@@ -294,13 +303,13 @@
 		<a2:eventhandler event="expired" from="logo-s1-txt" action="fadeIn" duration="500"/>
 		<a2:img width="300" height="42" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/300/logo-text.png"/>
 	</a2:layer> <!-- / Logo -->
-	<img src="${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019460;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
-	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330627/skeleton.js"> </script>
+	<img src="${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330628/skeleton.js"> </script>
 	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=${aid},${cid},${eid},${ms},${crid}"> </script>
 </a2:frame>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>a2abercrombiesummer</tabTrigger>
+	<tabTrigger>a25422</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>text.html</scope>
 </snippet>
