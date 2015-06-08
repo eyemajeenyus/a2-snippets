@@ -70,3 +70,5 @@ a2dpp - custom dpp category
 TEMPLATE TAB TRIGGERS
 
 a25422 - Abercrombie summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/5422
+
+a27366 - Abercrombie red summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/7366
