@@ -67,6 +67,23 @@ a2rtoleft - left RTO
 a2dpp - custom dpp category 
 
 
+
+FONTS
+
+opensans - Open Sans Google font - weights: 300, 400, 600, 700
+
+roboto - Roboto Google font - weights: 300, 400, 500, 700
+
+robotocondensed - Roboto Condensed Google font - weights: 300, 400, 700
+
+lato - Lato Google font - weights: 300, 400, 700
+
+sourcesanspro - Source Sans Pro Google font - weights: 300, 400, 600, 700
+
+opensanscondensed - Open Sans Condensed Google font - weights: 300, 700
+
+
+
 TEMPLATE TAB TRIGGERS
 
 a25422 - Abercrombie summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/5422
