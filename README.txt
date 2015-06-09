@@ -72,3 +72,7 @@ TEMPLATE TAB TRIGGERS
 a25422 - Abercrombie summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/5422
 
 a27366 - Abercrombie red summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/7366
+
+a2overtonscouple - Overtons couple video slingshot - https://steelhouse.zendesk.com/agent/tickets/5776
+
+a2overtonssunset - Overtons sunset video slingshot - https://steelhouse.zendesk.com/agent/tickets/5776

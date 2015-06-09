@@ -1,0 +1,195 @@
+<snippet>
+	<content><![CDATA[
+<!-- 160 --> 
+<a2:frame width="160" height="600" click="http://www.overtons.com/">
+	<a2:scenes 
+        width="160" height="600"
+        paginationStyle="position:absolute;  left:70px; top:16px; z-index:999;"
+        paginationLiStyle="width:10px; height:10px; margin-right:3px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_unsel.png);"
+        paginationLiSelectedStyle="width:10px; height:10px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_sel.png);"
+	>
+		<a2:scene transition="12">
+			<a2:timer name="t1" ms="1000"/>
+			<a2:img width="160" height="600" style="position:absolute; left:0; top:0; z-index:0" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/bg_s1.png"/>
+			<a2:video id="NcSA5v_pa6M" provider="youtube" mute="true" autoplay="true" start="0" duration="29" width="560" height="276" controls="false"
+				style="position: absolute; top:41px; left:-91px; overflow:hidden; -webkit-box-shadow:0px 0px 5px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow:0px 0px 5px 0px rgba(50, 50, 50, 0.9); box-shadow:0px 0px 5px 0px rgba(50, 50, 50, 0.9);" 
+				poster="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/poster_160_video1_v2.png"/>
+				<a2:img width="160" height="400" style="position: absolute; left: 0; top: 287px; background-color: #F7F7F7;" />
+				<a2:img width="160" height="51" style="position:absolute; left:0; bottom:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140519/RT/160/logo.png"/>
+			<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0; z-index:2;">
+				<a2:eventhandler event="expired" from="t1" action="fadeIn" duration="500"/>
+				<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RT/160/promo1.png"/>
+			</a2:layer>
+		</a2:scene>
+		<a2:scene>
+			<a2:timer name="timer_carousel" ms="1000" />
+			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20150313/z2907/RT/160/bg_s2.png"/>
+			<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RT/160/promo2.png"/>
+			<a2:selector name="up" width="36" height="10" style="position:absolute; left:62px; top:393px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/160x600/arrow_left.png"/>
+			<a2:selector name="down" width="36" height="10" style="position:absolute; left:62px; top:68px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/160x600/arrow_right.png"/>
+			<a2:carousel name="carousel1" focalLength="700" dppid="rvp,rvc,10" width="139" height="296" axisRotation="90" maxDimension="139" type="3d" count="3" radius="110" 
+				cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+				style="position:absolute; top:87px; left:10px; z-index:100; cursor:pointer;"
+				productContainerStyle="background:#ffffff; -webkit-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9);"
+			>
+				<a2:eventhandler event="selected" from="up" action="next"/>
+				<a2:eventhandler event="selected" from="up" action="stop"/>
+				<a2:eventhandler event="selected" from="down" action="previous"/>
+				<a2:eventhandler event="selected" from="down" action="stop"/>
+				<a2:eventhandler event="expired" from="timer_carousel" action="start" />
+			</a2:carousel>
+			<a2:button src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/cta_v2.png" width="123" height="40" style="position:absolute; left:20px; top:448px; z-index:999;">
+				<a2:eventhandler event="adunitChanged" from="carousel1" action="updateClick" />
+			</a2:button>
+		</a2:scene>
+	</a2:scenes>
+</a2:frame>
+
+<!-- 728 -->
+<a2:frame width="728" height="90" click="http://www.overtons.com/">
+	<a2:scenes 
+        width="728" height="90"
+        paginationStyle="position:absolute;  left:9px; top:7px; z-index:999;"
+        paginationLiStyle="width:10px; height:10px; margin-right:3px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_unsel.png);"
+        paginationLiSelectedStyle="width:10px; height:10px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_sel.png);"
+	>
+		<a2:scene transition="12">
+			<a2:timer name="t1" ms="2000"/>
+			<a2:video id="NcSA5v_pa6M" provider="youtube" mute="true" autoplay="true" start="0" duration="29" width="400" height="200" controls="false" 
+				style="position:absolute; top:-45px; left:120px; z-index:0;" 
+				poster="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/728/poster_728_video1_v2.png"
+			/>
+			<a2:img width="728" height="90" style="position:absolute; left:0; top:0; z-index:1" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/728/bg_s1.png"/>
+			<a2:layer width="728" height="90" show="false" style="position:absolute; left:0; top:0; z-index:2;">
+				<a2:eventhandler event="expired" from="t1" action="fadeIn" duration="500"/>
+				<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RT/728/promo1.png"/>
+			</a2:layer>
+		</a2:scene>
+		<a2:scene>
+			<a2:timer name="timer_carousel" ms="1000" />
+			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20150313/z2907/RT/728/bg_s2.png"/>
+			<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RT/728/promo2.png"/>
+			<a2:selector name="left" width="12" height="42" style="position:absolute; left:217px; top:25px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/728x90/arrow_left.png"/>
+			<a2:selector name="right" width="12" height="42" style="position:absolute; left:466px; top:25px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/728x90/arrow_right.png"/>
+			<a2:carousel name="carousel1" focalLength="800" dppid="rvp,rvc,10" width="227" height="84" axisRotation="0" maxDimension="84" type="3d" count="3" radius="90" 
+				cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+				style="position:absolute; top:3px; left:234px; z-index:100; cursor:pointer;"
+				productContainerStyle="background:#ffffff; -webkit-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9);"
+			>
+				<a2:eventhandler event="selected" from="left" action="next"/>
+				<a2:eventhandler event="selected" from="left" action="stop"/>
+				<a2:eventhandler event="selected" from="right" action="previous"/>
+				<a2:eventhandler event="selected" from="right" action="stop"/>
+				<a2:eventhandler event="expired" from="timer_carousel" action="start" />
+			</a2:carousel>
+			<a2:button src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/728/cta_v2.png" width="122" height="42" style="position:absolute; left:500px; top:27px; z-index:999;">
+				<a2:eventhandler event="adunitChanged" from="carousel1" action="updateClick" />
+			</a2:button>
+		</a2:scene>
+	</a2:scenes>
+</a2:frame>
+
+<!-- 300 -->
+<a2:frame width="300" height="250" click="http://www.overtons.com/">
+	<a2:scenes 
+        width="300"
+        height="250"
+        paginationStyle="position:absolute;  left:7px; top:6px; z-index:999;"
+        paginationLiStyle="width:10px; height:10px; margin-right:3px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_unsel.png);"
+        paginationLiSelectedStyle="width:10px; height:10px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_sel.png);"
+	>
+		<a2:scene transition="12">
+			<a2:timer name="t1" ms="4000"/>
+			<a2:video id="NcSA5v_pa6M" provider="youtube" mute="true" autoplay="true" start="0" duration="29" width="500" height="281" controls="false" 
+				style="position:absolute; top:-25px; left:-35px; z-index:0;" 
+				poster="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/300/poster_300_video1_v3.png"
+			/>
+			<a2:img width="300" height="250" style="position:absolute; left:0; top:0; z-index:1" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/300/bg_s1.png"/>
+			<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0; z-index:2;">
+				<a2:eventhandler event="expired" from="t1" action="fadeIn" duration="500"/>
+				<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RT/300/promo1.png"/>
+			</a2:layer>
+		</a2:scene>
+		<a2:scene>
+			<a2:timer name="timer_carousel" ms="1000" />
+			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20150313/z2907/RT/300/bg_s2.png"/>
+			<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RT/300/promo2.png"/>
+			<a2:selector name="left" width="10" height="36" style="position:absolute; left:5px; top:70px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/300x250/arrow_left.png"/>
+			<a2:selector name="right" width="10" height="36" style="position:absolute; left:285px; top:70px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/300x250/arrow_right.png"/>
+			<a2:carousel name="carousel1" focalLength="500" dppid="rvp,rvc,10" width="248" height="139" axisRotation="0" maxDimension="139" type="3d" count="3" radius="90" 
+				cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+				style="position:absolute; top:18px; left:27px; z-index:100; cursor:pointer;"
+				productContainerStyle="background:#ffffff; -webkit-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9);"
+			>
+				<a2:eventhandler event="selected" from="left" action="next"/>
+				<a2:eventhandler event="selected" from="left" action="stop"/>
+				<a2:eventhandler event="selected" from="right" action="previous"/>
+				<a2:eventhandler event="selected" from="right" action="stop"/>
+				<a2:eventhandler event="expired" from="timer_carousel" action="start" />
+			</a2:carousel>
+			<a2:button src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/300/cta_v2.png" width="121" height="40" style="position:absolute; left:93px; top:165px; z-index:999;">
+				<a2:eventhandler event="adunitChanged" from="carousel1" action="updateClick" />
+			</a2:button>
+		</a2:scene>
+	</a2:scenes>
+</a2:frame>
+
+<a2:rto width="364" height="263" template="default_left_rto"
+ onsiteAttributes="{
+  ad_page_pos:'absolute',
+  adShowSlice: 1,
+  ad_tran_time: '0.5s',
+  onsite_adbox_style: 'z-index: 99999; top:300px;', 
+  onsite_thumb_style: 'background:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RTO/showHide_v2.png) no-repeat; position:absolute; right:-22px; top: 0px; width:23px; height:36px; z-index:1000; -webkit-box-shadow:7px 1px 30px 0px rgba(50, 50, 50, 0.41); -moz-box-shadow:7px 1px 30px 0px rgba(50, 50, 50, 0.41); box-shadow:7px 1px 30px 0px rgba(50, 50, 50, 0.41);', 
+  rto_more_button: '-23px 0', 
+  rto_hide_button: '0 0'
+ }"
+ target="self"
+ click="http://www.overtons.com/"
+ >
+	<div style="position:absolute; right:1px; top:0; width:364px; height:263px; -webkit-box-shadow:0px 0px 30px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow:0px 0px 30px 0px rgba(50, 50, 50, 0.75); box-shadow:0px 0px 30px 0px rgba(50, 50, 50, 0.75);">
+		<a2:scenes 
+			width="364" height="263"
+			paginationStyle="position:absolute;  left:7px; top:6px; z-index:999;"
+			paginationLiStyle="width:10px; height:10px; margin-right:3px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_unsel.png);"
+			paginationLiSelectedStyle="width:10px; height:10px; background-image:url(http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RT/160/pag_sel.png);"
+		>
+			<a2:scene transition="12">
+				<a2:timer name="t1" ms="4000"/>
+				<a2:video id="NcSA5v_pa6M" provider="youtube" mute="true" autoplay="true" start="0" duration="17" width="450" height="250" controls="false" style="position:absolute; top:0; left:-2px; z-index:0;" poster="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RTO/poster_video1.png"></a2:video>
+				<a2:img width="387" height="307" style="position:absolute; left:0; top:-21px;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RTO/bg_s1_v4.png"/>
+				<a2:layer width="364" height="263" show="false" style="position:absolute; left:0; top:-21px; z-index:2;">
+					<a2:eventhandler event="expired" from="t1" action="fadeIn" duration="1000"/>
+					<a2:img width="364" height="263" style="position:absolute; left:0; top:24px;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RTO/promo1.png"/>
+				</a2:layer>
+			</a2:scene>
+			<a2:scene>
+				<a2:timer name="timer_carousel" ms="1000" />
+				<a2:img width="387" height="307" style="position:absolute; left:0; top:-21px;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20150313/z2907/RTO/bg_s2.png"/>
+				<a2:img width="364" height="263" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/${1:DATE}/${2:TICKET}/RTO/promo2.png"/>
+				<a2:selector name="left" width="12" height="42" style="position:absolute; left:11px; top:64px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/rto/arrow_left.png"/>
+				<a2:selector name="right" width="12" height="42" style="position:absolute; left:337px; top:64px; z-index:1000;" src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20140311/rto/arrow_right.png"/>
+				<a2:carousel name="carousel1" focalLength="700" dppid="rvp,rvc,10" width="299" height="139" axisRotation="0" maxDimension="139" type="3d" count="3" radius="110" 
+					cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+					style="position:absolute; top:18px; left:30px; z-index:100; cursor:pointer;"
+					productContainerStyle="background:#ffffff; -webkit-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); -moz-box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9); box-shadow:0px 0px 12px 0px rgba(50, 50, 50, 0.9);"
+				>
+					<a2:eventhandler event="selected" from="left" action="next"/>
+					<a2:eventhandler event="selected" from="left" action="stop"/>
+					<a2:eventhandler event="selected" from="right" action="previous"/>
+					<a2:eventhandler event="selected" from="right" action="stop"/>
+					<a2:eventhandler event="expired" from="timer_carousel" action="start" />
+				</a2:carousel>
+				<a2:button src="http://cdn1.steelhousemedia.com/files/docs/Overtons/20141121/3026/RTO/cta_v2.png" width="123" height="41" style="position:absolute; left:116px; top:165px; z-index:999;">
+					<a2:eventhandler event="adunitChanged" from="carousel1" action="updateClick" />
+				</a2:button>
+			</a2:scene>
+		</a2:scenes>
+	</div>
+</a2:rto>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2overtonssunset</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
