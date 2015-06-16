@@ -66,6 +66,8 @@ a2rtoleft - left RTO
 
 a2dpp - custom dpp category 
 
+a2src - http://cdn1.steelhousemedia.com/files/docs/
+
 
 
 FONTS
@@ -85,6 +87,8 @@ opensanscondensed - Open Sans Condensed Google font - weights: 300, 700
 
 
 TEMPLATE TAB TRIGGERS
+
+a25423 - Abercrombie summer template - all sizes - countdown timer - https://steelhouse.zendesk.com/agent/tickets/8221 (note: 5423 is what is referenced although no code is attached to that ticket. reference 8221 instead)
 
 a25422 - Abercrombie summer template - all sizes - no countdown timer - https://steelhouse.zendesk.com/agent/tickets/5422
 
