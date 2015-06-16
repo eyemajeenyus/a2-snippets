@@ -1,0 +1,460 @@
+<snippet>
+	<content><![CDATA[
+<!-- 160 -->
+<a2:frame width="160" height="600" click="http://ad.doubleclick.net/ddm/clk/288037795;115018196;q?http://www.hollisterco.com/shop/us/guys-shorts?cmp=DIS:_HCO_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'> </link>
+	<a2:timer name="scene-1-2-transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-2-1-transition" ms="8000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-1-2-repeat-transition" ms="12000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-2-3-transition" ms="16000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="carousel-trigger" ms="100" >
+		<a2:eventhandler event="entered" from="carousel1" action="start" duration="100" />
+	</a2:timer>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/bg.png"/>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/logo.png"/>
+	<!-- Today Only s1-s2 -->
+	<a2:layer width="160" height="600" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>		
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeOut" duration="300"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/today-only.png"/>
+	</a2:layer> <!-- / Today Only s1-s2 -->
+	<!-- Discalimer s2-s3 -->
+	<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeOut" duration="300"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/160/disclaimer-s2-s3.png"/>
+	</a2:layer> <!-- / Discalimer s2-s3 -->
+	<!-- Scene 1 -->
+	<a2:layer width="160" height="600" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeIn" duration="300"/>
+		<a2:counter name="c1" width="52" height="273" style="position:absolute; left:53px; top:211px; font:700 47px/49px 'Oswald', sans-serif; color:#091a31; text-align:center;" iab="false"
+			dayStyle="display:none;"
+			hourStyle="position:absolute; left:0; top:0; width:52px;"
+			minuteStyle="position:absolute; left:0; top:113px; width:52px;"
+			secondStyle="position:absolute; left:0; top:226px; width:52px;"
+			duration="campaign"
+		/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/bg-timer.png"/>
+		<a2:selector name="pag-s1-s1" width="12" height="12" style="position:absolute; left:62px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-on.png"/>
+		<a2:selector name="pag-s1-s2" width="12" height="12" style="position:absolute; left:74px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-off.png"/>
+		<a2:selector name="pag-s1-s3" width="12" height="12" style="position:absolute; left:86px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-off.png"/>
+	</a2:layer> <!-- / Scene 1 -->
+	<!-- Scene 2 -->
+	<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeIn" duration="300"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/160/headline-s2.png"/>
+		<a2:selector name="pag-s2-s1" width="12" height="12" style="position:absolute; left:62px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-off.png"/>
+		<a2:selector name="pag-s2-s2" width="12" height="12" style="position:absolute; left:74px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-on.png"/>
+		<a2:selector name="pag-s2-s3" width="12" height="12" style="position:absolute; left:86px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-off.png"/>
+	</a2:layer> <!-- / Scene 2 -->	
+	<!-- Scene 3 -->
+	<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeIn" duration="300"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/160/headline-s3.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/price-now-v2.png"/>
+		<a2:carousel name="carousel1" width="139" height="139" axisRotation="0" type="3d" maxDimension="139" count="5" radius="500" dppid="rvp,rvc,10"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:11px; top:294px; cursor:pointer; overflow:hidden;"
+			urlprefix="http://ad.doubleclick.net/ddm/clk/288037795;115018196;q?"
+			urlsuffix="cmp=DIS:_HCO_STH_DynamicDesktop"
+		>
+			<a2:eventhandler event="expired" from="scene-2-3-transition" action="start"/>
+			<a2:eventhandler event="selected" from="left" action="previous"/>
+			<a2:eventhandler event="selected" from="right" action="next"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:160px; height:23px; left:0; top:490px;" dppid="rvp,rvc,10"
+			imagestyle="display:none" brandStyle="display:none" productstyle="display:none"
+			priceStyle="position:absolute; width:150px; height:23px; text-align:center; padding:0 5px; font:600 21px/23px 'Source Sans Pro', Arial, sans-serif; color:#091a31; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<!-- Product Reveal -->
+		<a2:layer width="139" height="139" show="false" style="position:absolute; left:11px; top:294px; cursor:pointer; z-index:501;">
+			<a2:eventhandler event="expired" from="carousel-trigger" action="fadeIn" duration="300" />
+			<a2:eventhandler event="exited" from="carousel-hover-exit" action="fadeOut" duration="300"/>
+			<a2:product style="position:absolute; width:139px; height:139px; left:0; top:0; background-color:#fff; opacity:.70; filter:alpha(opacity=70); cursor:pointer;" dppid="rvp,rvc,10"
+				imagestyle="display:none" brandStyle="display:none"  priceStyle="display:none;"
+				productstyle="position:absolute; top:53px; width:99px; height:45px; text-align:center; padding:0 20px; font:600 13px/15px 'Source Sans Pro', Arial, sans-serif; text-transform:uppercase; color:#091a31; overflow:hidden;"
+			>
+				<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+			</a2:product>
+			<a2:button name="carousel-hover-exit" width="139" height="139" style="position:absolute; left:0; top:0; cursor:pointer;">
+				<a2:eventhandler from="carousel1" event="adunitChanged" action="updateClick" />
+			</a2:button>
+		</a2:layer> <!-- / Product Reveal -->
+		<a2:selector name="left" width="14" height="17" style="position:absolute; left:12px; top:355px; z-index:503;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/arrow-left.png"/>
+		<a2:selector name="right" width="14" height="17" style="position:absolute; left:135px; top:355px; z-index:503;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/arrow-right.png"/>
+		<a2:selector name="pag-s3-s1" width="12" height="12" style="position:absolute; left:62px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-off.png"/>
+		<a2:selector name="pag-s3-s2" width="12" height="12" style="position:absolute; left:74px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-off.png"/>
+		<a2:selector name="pag-s3-s3" width="12" height="12" style="position:absolute; left:86px; top:572px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/160/pag-on.png"/>
+	</a2:layer> <!-- / Scene 3 -->	
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485618.115019634;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35035/4331494/skeleton.js"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=\${aid},\${cid},\${eid},\${ms},\${crid}"> </script>
+</a2:frame>
+
+<!-- 728 -->
+<a2:frame width="728" height="90" click="http://ad.doubleclick.net/ddm/clk/288037795;115018196;q?http://www.hollisterco.com/shop/us/guys-shorts?cmp=DIS:_HCO_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'> </link>
+	<a2:timer name="scene-1-2-transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-2-1-transition" ms="8000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-1-2-repeat-transition" ms="12000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-2-3-transition" ms="16000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/bg.png"/>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/logo.png"/>
+	<!-- Today Only s1-s2 -->
+	<a2:layer width="728" height="90" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>		
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeOut" duration="300"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/today-only.png"/>
+	</a2:layer> <!-- / Today Only s1-s2 -->
+	<!-- Scene 1 -->
+	<a2:layer width="728" height="90" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeIn" duration="300"/>
+		<a2:counter name="c1" width="289" height="44" style="position:absolute; left:363px; top:16px; font:700 42px/44px 'Oswald', sans-serif; color:#091a31; text-align:center;" iab="false"
+			dayStyle="display:none;"
+			hourStyle="position:absolute; left:0; top:0; width:49px;"
+			minuteStyle="position:absolute; left:122px; top:0; width:49px;"
+			secondStyle="position:absolute; left:240px; top:0; width:49px;"
+			duration="campaign"
+		/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/bg-timer.png"/>
+		<a2:selector name="pag-s1-s1" width="12" height="12" style="position:absolute; left:52px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-on.png"/>
+		<a2:selector name="pag-s1-s2" width="12" height="12" style="position:absolute; left:64px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-off.png"/>
+		<a2:selector name="pag-s1-s3" width="12" height="12" style="position:absolute; left:76px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-off.png"/>
+	</a2:layer> <!-- / Scene 1 -->
+	<!-- Scene 2 -->
+	<a2:layer width="728" height="90" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeIn" duration="300"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/728/headline-s2.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/728/disclaimer-s2.png"/>
+		<a2:selector name="pag-s2-s1" width="12" height="12" style="position:absolute; left:52px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-off.png"/>
+		<a2:selector name="pag-s2-s2" width="12" height="12" style="position:absolute; left:64px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-on.png"/>
+		<a2:selector name="pag-s2-s3" width="12" height="12" style="position:absolute; left:76px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-off.png"/>
+	</a2:layer> <!-- / Scene 2 -->	
+	<!-- Scene 3 -->
+	<a2:layer width="728" height="90" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeIn" duration="300"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/728/headline-s3.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/728/disclaimer-s3.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/price-now.png"/>
+		<a2:carousel name="carousel1" width="90" height="90" axisRotation="0" type="3d" maxDimension="90" count="5" radius="500" dppid="rvp,rvc,10"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:423px; top:0; cursor:pointer; overflow:hidden;"
+			urlprefix="http://ad.doubleclick.net/ddm/clk/288037795;115018196;q?"
+			urlsuffix="cmp=DIS:_HCO_STH_DynamicDesktop"
+		>
+			<a2:eventhandler event="expired" from="scene-2-3-transition" action="start"/>
+			<a2:eventhandler event="selected" from="left" action="previous"/>
+			<a2:eventhandler event="selected" from="right" action="next"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:166px; height:42px; left:538px; top:24px;" dppid="rvp,rvc,10"
+			imagestyle="display:none" brandStyle="display:none" 
+			productstyle="position:absolute; top:0; left:0; width:76px; height:42px; text-align:center; padding:0 2px; font:600 12px/14px 'Source Sans Pro', Arial, sans-serif; text-transform:uppercase; color:#091a31; overflow:hidden;"
+			priceStyle="position:absolute; top:19px; right:0; width:64px; height:22px; text-align:center; padding:0 2px; font:600 20px/22px 'Source Sans Pro', Arial, sans-serif; color:#091a31; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<a2:selector name="left" width="14" height="17" style="position:absolute; left:423px; top:38px; z-index:503;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/arrow-left.png"/>
+		<a2:selector name="right" width="14" height="17" style="position:absolute; left:499px; top:38px; z-index:503;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/arrow-right.png"/>
+		<a2:selector name="pag-s3-s1" width="12" height="12" style="position:absolute; left:52px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-off.png"/>
+		<a2:selector name="pag-s3-s2" width="12" height="12" style="position:absolute; left:64px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-off.png"/>
+		<a2:selector name="pag-s3-s3" width="12" height="12" style="position:absolute; left:76px; top:65px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/728/pag-on.png"/>
+	</a2:layer> <!-- / Scene 3 -->	
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485618.115019634;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35035/4331494/skeleton.js"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=\${aid},\${cid},\${eid},\${ms},\${crid}"> </script>
+</a2:frame>
+
+<!-- 300 -->
+<a2:frame width="300" height="250" click="http://ad.doubleclick.net/ddm/clk/288037795;115018196;q?http://www.hollisterco.com/shop/us/guys-shorts?cmp=DIS:_HCO_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'> </link>
+	<a2:timer name="scene-1-2-transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-2-1-transition" ms="8000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-1-2-repeat-transition" ms="12000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene-2-3-transition" ms="16000">
+		<a2:eventhandler event="selected" from="pag-s1-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="stop"/>
+		<a2:eventhandler event="selected" from="pag-s3-s3" action="stop"/>
+	</a2:timer>
+	<a2:timer name="carousel-trigger" ms="100" >
+		<a2:eventhandler event="entered" from="carousel1" action="start" duration="100" />
+	</a2:timer>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/bg.png"/>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/logo.png"/>
+	<!-- Discalimer s2-s3 -->
+	<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeOut" duration="300"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/300/disclaimer-s2-s3.png"/>
+	</a2:layer> <!-- / Discalimer s2-s3 -->
+	<!-- Scene 1 -->
+	<a2:layer width="300" height="250" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeIn" duration="300"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/today-only.png"/>
+		<a2:counter name="c1" width="204" height="44" style="position:absolute; left:49px; top:123px; font:700 42px/44px 'Oswald', sans-serif; color:#091a31; text-align:center;" iab="false"
+			dayStyle="display:none;"
+			hourStyle="position:absolute; left:0; top:0; width:49px;"
+			minuteStyle="position:absolute; left:78px; top:0; width:49px;"
+			secondStyle="position:absolute; left:155px; top:0; width:49px;"
+			duration="campaign"
+		/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/bg-timer.png"/>
+		<a2:selector name="pag-s1-s1" width="12" height="12" style="position:absolute; left:132px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-on.png"/>
+		<a2:selector name="pag-s1-s2" width="12" height="12" style="position:absolute; left:144px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-off.png"/>
+		<a2:selector name="pag-s1-s3" width="12" height="12" style="position:absolute; left:156px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-off.png"/>
+	</a2:layer> <!-- / Scene 1 -->
+	<!-- Scene 2 -->
+	<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-1-2-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-1-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-1-2-repeat-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeOut" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s2-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s2" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeIn" duration="300"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/300/headline-s2.png"/>
+		<a2:selector name="pag-s2-s1" width="12" height="12" style="position:absolute; left:132px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-off.png"/>
+		<a2:selector name="pag-s2-s2" width="12" height="12" style="position:absolute; left:144px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-on.png"/>
+		<a2:selector name="pag-s2-s3" width="12" height="12" style="position:absolute; left:156px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-off.png"/>
+	</a2:layer> <!-- / Scene 2 -->	
+	<!-- Scene 3 -->
+	<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene-2-3-transition" action="fadeIn" duration="700"/>
+		<a2:eventhandler event="selected" from="pag-s3-s1" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s3-s2" action="fadeOut" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s1-s3" action="fadeIn" duration="300"/>
+		<a2:eventhandler event="selected" from="pag-s2-s3" action="fadeIn" duration="300"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/${1:DATE}/${2:TICKET}/RT/300/headline-s3.png"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/price-now-v2.png"/>
+		<a2:carousel name="carousel1" width="136" height="136" axisRotation="0" type="3d" maxDimension="136" count="5" radius="500" dppid="rvp,rvc,10"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:22px; top:68px; cursor:pointer; overflow:hidden;"
+			urlprefix="http://ad.doubleclick.net/ddm/clk/288037795;115018196;q?"
+			urlsuffix="cmp=DIS:_HCO_STH_DynamicDesktop"
+		>
+			<a2:eventhandler event="expired" from="scene-2-3-transition" action="start"/>
+			<a2:eventhandler event="selected" from="left" action="previous"/>
+			<a2:eventhandler event="selected" from="right" action="next"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:79px; height:21px; left:184px; top:179px;" dppid="rvp,rvc,10"
+			imagestyle="display:none" brandStyle="display:none" productstyle="display:none"
+			priceStyle="position:absolute; width:79px; height:21px; text-align:center; font:600 19px/21px 'Source Sans Pro', Arial, sans-serif; color:#091a31; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<!-- Product Reveal -->
+		<a2:layer width="136" height="136" show="false" style="position:absolute; left:22px; top:68px; cursor:pointer; z-index:501;">
+			<a2:eventhandler event="expired" from="carousel-trigger" action="fadeIn" duration="300" />
+			<a2:eventhandler event="exited" from="carousel-hover-exit" action="fadeOut" duration="300"/>
+			<a2:product style="position:absolute; width:136px; height:136px; left:0; top:0; background-color:#fff; opacity:.70; filter:alpha(opacity=70);" dppid="rvp,rvc,10"
+				imagestyle="display:none" brandStyle="display:none"  priceStyle="display:none;"
+				productstyle="position:absolute; top:47px; width:90px; height:45px; text-align:center; padding:0 23px; font:600 13px/15px 'Source Sans Pro', Arial, sans-serif; text-transform:uppercase; color:#091a31; overflow:hidden;"
+			>
+				<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+			</a2:product>
+			<a2:button name="carousel-hover-exit" width="136" height="136" style="position:absolute; left:0; top:0;">
+				<a2:eventhandler from="carousel1" event="adunitChanged" action="updateClick" />
+			</a2:button>
+		</a2:layer> <!-- / Product Reveal -->
+		<a2:selector name="left" width="14" height="17" style="position:absolute; left:23px; top:127px; z-index:503;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/arrow-left.png"/>
+		<a2:selector name="right" width="14" height="17" style="position:absolute; left:141px; top:127px; z-index:503;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/arrow-right.png"/>
+		<a2:selector name="pag-s3-s1" width="12" height="12" style="position:absolute; left:132px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-off.png"/>
+		<a2:selector name="pag-s3-s2" width="12" height="12" style="position:absolute; left:144px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-off.png"/>
+		<a2:selector name="pag-s3-s3" width="12" height="12" style="position:absolute; left:156px; top:232px;" src="http://cdn1.steelhousemedia.com/files/docs/Hollister/20150427/z5434/RT/300/pag-on.png"/>
+	</a2:layer> <!-- / Scene 3 -->	
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485618.115019634;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35035/4331494/skeleton.js"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=\${aid},\${cid},\${eid},\${ms},\${crid}"> </script>
+</a2:frame>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a25434</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

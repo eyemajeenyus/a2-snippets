@@ -86,9 +86,13 @@ opensanscondensed - Open Sans Condensed Google font - weights: 300, 700
 
 TEMPLATE TAB TRIGGERS
 
-a25422 - Abercrombie summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/5422
+a25422 - Abercrombie summer template - all sizes - no countdown timer - https://steelhouse.zendesk.com/agent/tickets/5422
 
 a27366 - Abercrombie red summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/7366
+
+a25434 - Hollister summer template - all sizes - countdown timer - https://steelhouse.zendesk.com/agent/tickets/5434
+
+a25436 - Hollister summer template - all sizes - no countdown timer - https://steelhouse.zendesk.com/agent/tickets/5436
 
 a2overtonscouple - Overtons couple video slingshot - https://steelhouse.zendesk.com/agent/tickets/5776
 
