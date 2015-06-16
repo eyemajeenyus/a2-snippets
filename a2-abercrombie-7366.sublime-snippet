@@ -106,9 +106,9 @@
 		<a2:eventhandler event="expired" from="logo-s1-txt" action="fadeIn" duration="500"/>
 		<a2:img width="160" height="74" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150605/z7366/RT/160/logo-text.png"/>
 	</a2:layer> <!-- / Logo -->
-	<img src="${http}://ad.doubleclick.net/ad/N3093.1870362.STEELHOUSE.COM/B8171105;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<img src="/${http}://ad.doubleclick.net/ad/N3093.1870362.STEELHOUSE.COM/B8171105;sz=1x1;ord=/${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
 	<script src="http://pixel.adsafeprotected.com/rjss/st/33634/4331581/skeleton.js"> </script>
-	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=${aid},${cid},${eid},${ms},${crid}"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=/${aid},/${cid},/${eid},/${ms},/${crid}"> </script>
 </a2:frame>
 
 <!-- 728 -->
@@ -187,9 +187,9 @@
 		<a2:selector name="pag-s2-off" width="11" height="11" style="position:absolute; left:64px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/pag-off.png"/>
 		<a2:selector name="pag-s2-on" width="11" height="11" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/728/pag-on.png"/>
 	</a2:layer> <!-- / Scene 2 -->
-	<img src="${http}://ad.doubleclick.net/ad/N3093.1870362.STEELHOUSE.COM/B8171105;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<img src="/${http}://ad.doubleclick.net/ad/N3093.1870362.STEELHOUSE.COM/B8171105;sz=1x1;ord=/${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
 	<script src="http://pixel.adsafeprotected.com/rjss/st/33634/4331581/skeleton.js"> </script>
-	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=${aid},${cid},${eid},${ms},${crid}"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=/${aid},/${cid},/${eid},/${ms},/${crid}"> </script>
 </a2:frame>
 
 <!-- 300 -->
@@ -298,9 +298,9 @@
 		<a2:eventhandler event="expired" from="logo-s1-txt" action="fadeIn" duration="500"/>
 		<a2:img width="300" height="40" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150605/z7366/RT/300/logo-text.png"/>
 	</a2:layer> <!-- / Logo -->
-	<img src="${http}://ad.doubleclick.net/ad/N3093.1870362.STEELHOUSE.COM/B8171105;sz=1x1;ord=${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<img src="/${http}://ad.doubleclick.net/ad/N3093.1870362.STEELHOUSE.COM/B8171105;sz=1x1;ord=/${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
 	<script src="http://pixel.adsafeprotected.com/rjss/st/33634/4331581/skeleton.js"> </script>
-	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=${aid},${cid},${eid},${ms},${crid}"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=/${aid},/${cid},/${eid},/${ms},/${crid}"> </script>
 </a2:frame>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
