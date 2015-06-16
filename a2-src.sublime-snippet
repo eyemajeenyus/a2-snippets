@@ -3,7 +3,7 @@
 http://cdn1.steelhousemedia.com/files/docs/
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>src</tabTrigger>
+	<tabTrigger>a2src</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>text.html</scope>
 </snippet>
