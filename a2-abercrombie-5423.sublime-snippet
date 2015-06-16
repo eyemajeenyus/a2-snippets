@@ -75,7 +75,7 @@
 		<a2:eventhandler event="selected" from="pag-s3-off" action="fadeOut" duration="300"/>
 		<a2:eventhandler event="selected" from="pag-s2-off" action="fadeIn" duration="300"/>
 		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo1.png"/>
-		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie${1:DATE}/${2:TICKET}/z8221/RT/160/disclaimer1.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer1.png"/>
 		<a2:selector name="pag-s1-off" width="11" height="11" style="position:absolute; left:64px; top:578px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/pag-off.png"/>
 		<a2:selector name="pag-s2-on" width="11" height="11" style="position:absolute; left:75px; top:578px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/pag-on.png"/>
 		<a2:selector name="pag-s3-off" width="11" height="11" style="position:absolute; left:86px; top:578px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150428/z5422/RT/160/pag-off.png"/>
