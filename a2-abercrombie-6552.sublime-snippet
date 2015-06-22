@@ -1,0 +1,91 @@
+<snippet>
+	<content><![CDATA[
+<!-- 160 --> 
+<a2:frame width="160" height="600" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?https://www.abercrombie.com/webapp/wcs/stores/servlet/OrderShippingSectionDisplayView?langId=-1&catalogId=10901&storeId=10051&ddkey=http:InventoryRepudiationCheck&cmp=DIS:_ANF_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> </link>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20141222/3393/RT/160/bg_s2.png"/>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo.png"/>
+	<a2:carousel name="carousel1" width="130" height="130" axisRotation="0" type="3d" maxDimension="130" count="5" radius="500" dppid="cart,10" 
+		style="position:absolute; left:15px; top:256px; cursor:pointer; overflow:hidden;"
+		urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
+		urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
+	>
+	</a2:carousel>
+	<a2:product style="position:absolute; width:140px; height:76px; left:10px; top:425px;" dppid="cart,10"
+		imagestyle="display:none" brandStyle="display:none"
+		productstyle="position:static; width:140px; max-height:33px; text-transform:uppercase; text-align:center; font:14px/16px 'EB Garamond', Georgia, serif; color:#212121; overflow:hidden;"
+		priceStyle="position:static; width:140px; text-align:center; font:18px/20px 'Oswald', Arial, sans-serif; color:#212121; overflow:hidden;"
+	>
+		<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+	</a2:product>
+	<a2:button width="103" height="25" style="position:absolute; left:29px; top:520px;"
+		src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150520/z6552/RT/160/cta.png"
+		hoverSrc="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150520/z6552/RT/160/cta2.png"
+	/>
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330628/skeleton.js"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=\${aid},\${cid},\${eid},\${ms},\${crid}"> </script>
+</a2:frame>
+
+<!-- 728 -->
+<a2:frame width="728" height="90" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?https://www.abercrombie.com/webapp/wcs/stores/servlet/OrderShippingSectionDisplayView?langId=-1&catalogId=10901&storeId=10051&ddkey=http:InventoryRepudiationCheck&cmp=DIS:_ANF_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> </link>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20141222/3393/RT/728/bg_s2.png"/>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/promo.png"/>
+	<a2:carousel name="carousel1" width="80" height="80" axisRotation="0" type="3d" maxDimension="80" count="5" radius="500" dppid="cart,10" 
+		style="position:absolute; left:402px; top:5px; cursor:pointer; overflow:hidden;"
+		urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
+		urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
+	>
+	</a2:carousel>
+	<a2:product style="position:absolute; width:90px; height:64px; left:500px; top:16px;" dppid="cart,10"
+		imagestyle="display:none" brandStyle="display:none"
+		productstyle="position:static; width:90px; max-height:33px; text-transform:uppercase; text-align:left; font:14px/16px 'EB Garamond', Georgia, serif; color:#212121; overflow:hidden;"
+		priceStyle="position:static; width:90px; text-align:left; font:18px/20px 'Oswald', Arial, sans-serif; color:#212121; overflow:hidden;"
+	>
+		<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+	</a2:product>
+	<a2:button width="107" height="25" style="position:absolute; left:602px; top:34px;"
+		src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150520/z6552/RT/728/cta.png"
+		hoverSrc="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150520/z6552/RT/728/cta2.png"
+	/>
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330628/skeleton.js"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=\${aid},\${cid},\${eid},\${ms},\${crid}"> </script>
+</a2:frame>
+
+<!-- 300 -->
+<a2:frame width="300" height="250" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?https://www.abercrombie.com/webapp/wcs/stores/servlet/OrderShippingSectionDisplayView?langId=-1&catalogId=10901&storeId=10051&ddkey=http:InventoryRepudiationCheck&cmp=DIS:_ANF_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> </link>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20141222/3393/RT/300/bg_s2.png"/>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/promo.png"/>
+	<a2:carousel name="carousel1" width="108" height="108" axisRotation="0" type="3d" maxDimension="108" count="5" radius="500" dppid="cart,10" 
+		style="position:absolute; left:31px; top:121px; cursor:pointer; overflow:hidden;"
+		urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
+		urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
+	>
+	</a2:carousel>
+	<a2:product style="position:absolute; width:128px; height:61px; left:164px; top:128px;" dppid="cart,10"
+		imagestyle="display:none" brandStyle="display:none"
+		productstyle="position:static; width:118px; max-height:33px; text-transform:uppercase; text-align:left; padding:0 5px; font:14px/16px 'EB Garamond', Georgia, serif; color:#212121; overflow:hidden;"
+		priceStyle="position:static; width:118px; text-align:left; padding:0 5px; font:18px/20px 'Oswald', Arial, sans-serif; color:#212121; overflow:hidden;"
+	>
+		<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+	</a2:product>
+	<a2:button width="103" height="25" style="position:absolute; left:167px; top:204px;"
+		src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150520/z6552/RT/300/cta.png"
+		hoverSrc="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150520/z6552/RT/300/cta2.png"
+	/>
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<script src="http://pixel.adsafeprotected.com/rjss/st/35037/4330628/skeleton.js"> </script>
+	<script type="text/javascript" src="https://static.adyapper.com/onad/D2A2610926?id=\${aid},\${cid},\${eid},\${ms},\${crid}"> </script>
+</a2:frame>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a26552</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
