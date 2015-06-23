@@ -148,7 +148,7 @@
 		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeOut" duration="500"/>
 		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/bg_s2.png"/>
 		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo.png"/>
-		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer_v2.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer.png"/>
 		<a2:carousel name="carousel1" width="128" height="128" axisRotation="0" type="3d" maxDimension="128" count="5" radius="500" dppid="281"
 			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
 			style="position:absolute; left:16px; top:235px; cursor:pointer; overflow:hidden;"
