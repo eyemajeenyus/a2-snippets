@@ -1,0 +1,498 @@
+<snippet>
+	<content><![CDATA[
+<!-- 160 -->
+<a2:frame width="160" height="600" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-jeans?cmp=DIS:_ANF_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> </link>
+	<a2:timer name="group1_transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_up" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_down" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_up" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_down" action="stop"/>
+	</a2:timer>
+	<a2:timer name="group2_transition" ms="8000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_up" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_down" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_up" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_down" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene_transition" ms="12000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+	</a2:timer>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/bg_s1.png"/>
+	<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/header_s1.png"/>
+	<a2:layer width="160" height="600" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene_transition" action="fadeOut" duration="1000"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="fadeOut" duration="500"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeIn" duration="500"/>
+		<a2:button width="160" height="600" style="position:absolute; left:0; top:0;"/>
+		<a2:layer width="160" height="600" show="true" style="position:absolute; left:0; top:0;"> <!-- jeans group 1 -->
+			<a2:eventhandler event="selected" from="group2_arrow_up" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group2_arrow_down" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group1_arrow_up" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="selected" from="group1_arrow_down" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="expired" from="group1_transition" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="expired" from="group2_transition" action="fadeIn" duration="350"/>
+			<a2:button width="160" height="600" style="position:absolute; left:0; top:0;"/>
+			<a2:img name="group1_p1_off" width="72" height="233" style="position:absolute; left:5px; top:75px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p1_superSkinny_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-super-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:5px; top:75px;">
+				<a2:eventhandler event="exited" from="group1_p1_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p1_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p1_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p1_superSkinny_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-super-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group1_p2_off" width="72" height="233" style="position:absolute; left:83px; top:75px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p2_skinny_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:83px; top:75px;">
+				<a2:eventhandler event="exited" from="group1_p2_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p2_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p2_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p2_skinny_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group1_p3_off" width="72" height="233" style="position:absolute; left:5px; top:312px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p3_slimStraight_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-slim-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:5px; top:312px;">
+				<a2:eventhandler event="exited" from="group1_p3_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p3_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p3_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p3_slimStraight_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-slim-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group1_p4_off" width="72" height="233" style="position:absolute; left:83px; top:312px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p4_classicTapper_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:83px; top:312px;">
+				<a2:eventhandler event="exited" from="group1_p4_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p4_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p4_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group1_p4_classicTapper_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:selector name="group1_arrow_up" width="20" height="12" style="position:absolute; left:70px; top:56px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/arrow_s1_up.png"/>
+			<a2:selector name="group1_arrow_down" width="20" height="12" style="position:absolute; left:70px; top:555px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/arrow_s1_down.png"/>
+		</a2:layer> <!-- /jeans group 1 -->
+		<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0;"> <!-- jeans group 2 -->
+			<a2:eventhandler event="selected" from="group1_arrow_up" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group1_arrow_down" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group2_arrow_up" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="selected" from="group2_arrow_down" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="expired" from="group1_transition" action="fadeIn" duration="350"/>
+			<a2:eventhandler event="expired" from="group2_transition" action="fadeOut" duration="350"/>
+			<a2:button width="160" height="600" style="position:absolute; left:0; top:0;"/>
+			<a2:img name="group2_p1_off" width="72" height="233" style="position:absolute; left:5px; top:75px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p1_classicTapper_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:5px; top:75px;">
+				<a2:eventhandler event="exited" from="group2_p1_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p1_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p1_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p1_classicTapper_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group2_p2_off" width="72" height="233" style="position:absolute; left:83px; top:75px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p2_slimStraight_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:83px; top:75px;">
+				<a2:eventhandler event="exited" from="group2_p2_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p2_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p2_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p2_slimStraight_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group2_p3_off" width="72" height="233" style="position:absolute; left:5px; top:312px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p3_boot_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-boot-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:5px; top:312px;">
+				<a2:eventhandler event="exited" from="group2_p3_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p3_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p3_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p3_boot_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-boot-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group2_p4_off" width="72" height="233" style="position:absolute; left:83px; top:312px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p4_joggers_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-joggers-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="72" height="233" show="false" style="position:absolute; left:83px; top:312px;">
+				<a2:eventhandler event="exited" from="group2_p4_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p4_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p4_on" width="72" height="233" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/group2_p4_joggers_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-joggers-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:selector name="group2_arrow_up" width="20" height="12" style="position:absolute; left:70px; top:56px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/arrow_s1_up.png"/>
+			<a2:selector name="group2_arrow_down" width="20" height="12" style="position:absolute; left:70px; top:555px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/arrow_s1_down.png"/>
+		</a2:layer> <!-- /jeans group 2 -->
+		<a2:selector name="pag_s1_on" width="10" height="10" style="position:absolute; left:70px; top:576px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/pag_on.png"/>
+		<a2:selector name="pag_s1_off" width="10" height="10" style="position:absolute; left:80px; top:576px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/pag_off.png"/>
+	</a2:layer>
+	<a2:layer width="160" height="600" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene_transition" action="fadeIn" duration="1000"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="fadeIn" duration="500"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeOut" duration="500"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/bg_s2.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/promo.png"/>
+		<a2:img width="160" height="600" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/160/disclaimer_v2.png"/>
+		<a2:carousel name="carousel1" width="128" height="128" axisRotation="0" type="3d" maxDimension="128" count="5" radius="500" dppid="281"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:16px; top:235px; cursor:pointer; overflow:hidden;"
+			urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
+			urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
+		>
+			<a2:eventhandler event="selected" from="left" action="next"/>
+			<a2:eventhandler event="selected" from="right" action="previous"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+			<a2:eventhandler event="expired" from="scene_transition" action="start"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:160px; height:76px; left:0; top:390px;"
+			imagestyle="display:none" brandStyle="display:none"
+			productstyle="position:static; width:150px; max-height:33px; text-transform:uppercase; text-align:center; padding:0 5px; font:14px/16px 'EB Garamond', Georgia, serif; color:#212121; overflow:hidden;"
+			priceStyle="position:static; width:150px; text-align:center; padding:0 5px; font:20px/22px 'Oswald', Arial, sans-serif; color:#212121; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<a2:button class="sh160cta" width="94" height="25" style="position:absolute; left:33px; top:464px;"/>
+		<a2:selector name="left" width="21" height="25" style="position:absolute; left:12px; top:285px; z-index:999;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/arrow_s2_left.png"/>
+		<a2:selector name="right" width="21" height="25" style="position:absolute; left:127px; top:285px; z-index:999;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/arrow_s2_right.png"/>
+		<a2:selector name="pag_s2_off" width="10" height="10" style="position:absolute; left:70px; top:576px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/pag_off.png"/>
+		<a2:selector name="pag_s2_on" width="10" height="10" style="position:absolute; left:80px; top:576px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/160/pag_on.png"/>
+	</a2:layer>
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<a2:thirdparty>
+		<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/35037/3706481/skeleton.js"> </SCRIPT>
+		<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/35037/3706480/skeleton.gif" BORDER="0" WIDTH="1" HEIGHT="1" ALT="" /></NOSCRIPT>
+	</a2:thirdparty>
+</a2:frame>
+
+<!-- 728 -->
+<a2:frame width="728" height="90" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-jeans?cmp=DIS:_ANF_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> </link>
+	<a2:timer name="scene_transition" ms="12000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+	</a2:timer>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/bg_s1.png"/>
+	<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/header_s1.png"/>
+	<a2:layer width="728" height="90" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene_transition" action="fadeOut" duration="1000"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="fadeOut" duration="500"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeIn" duration="500"/>
+		<a2:button width="728" height="90" style="position:absolute; left:0; top:0;"/>
+		<a2:img name="group1_p1_off" width="69" height="84" style="position:absolute; left:165px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p1_superSkinny_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-super-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="69" height="84" show="false" style="position:absolute; left:165px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p1_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p1_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p1_on" width="69" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p1_superSkinny_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-super-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:img name="group1_p2_off" width="64" height="84" style="position:absolute; left:247px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p2_skinny_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="64" height="84" show="false" style="position:absolute; left:247px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p2_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p2_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p2_on" width="64" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p2_skinny_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:img name="group1_p3_off" width="64" height="84" style="position:absolute; left:324px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p3_slimStraight_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-slim-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="64" height="84" show="false" style="position:absolute; left:324px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p3_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p3_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p3_on" width="64" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p3_slimStraight_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-slim-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:img name="group1_p4_off" width="69" height="84" style="position:absolute; left:401px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p4_classicTapper_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="69" height="84" show="false" style="position:absolute; left:401px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p4_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p4_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p4_on" width="69" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p4_classicTapper_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:img name="group1_p5_off" width="69" height="84" style="position:absolute; left:483px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p5_slimStraight_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="69" height="84" show="false" style="position:absolute; left:483px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p5_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p5_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p5_on" width="69" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p5_slimStraight_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:img name="group1_p6_off" width="69" height="84" style="position:absolute; left:565px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p6_boot_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-boot-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="69" height="84" show="false" style="position:absolute; left:565px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p6_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p6_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p6_on" width="69" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p6_boot_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-boot-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:img name="group1_p7_off" width="69" height="84" style="position:absolute; left:647px; top:3px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p7_joggers_mens_off.png"
+			click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-joggers-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+		/>
+		<a2:layer width="69" height="84" show="false" style="position:absolute; left:647px; top:3px;">
+			<a2:eventhandler event="exited" from="group1_p7_on" action="fadeOut" duration="350"/>
+			<a2:eventhandler event="entered" from="group1_p7_off" action="fadeIn" duration="350"/>
+			<a2:img name="group1_p7_on" width="69" height="84" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/group1_p7_joggers_mens_on.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-joggers-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+		</a2:layer>
+		<a2:selector name="pag_s1_on" width="10" height="10" style="position:absolute; left:65px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/pag_on.png"/>
+		<a2:selector name="pag_s1_off" width="10" height="10" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/pag_off.png"/>
+	</a2:layer>
+	<a2:layer width="728" height="90" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene_transition" action="fadeIn" duration="1000"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="fadeIn" duration="500"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeOut" duration="500"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/bg_s2.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/promo.png"/>
+		<a2:img width="728" height="90" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/728/disclaimer.png"/>
+		<a2:carousel name="carousel1" width="80" height="80" axisRotation="0" type="3d" maxDimension="80" count="5" radius="500" dppid="281"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:413px; top:5px; cursor:pointer; overflow:hidden;"
+			urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
+			urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
+		>
+			<a2:eventhandler event="selected" from="left" action="next"/>
+			<a2:eventhandler event="selected" from="right" action="previous"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+			<a2:eventhandler event="expired" from="scene_transition" action="start"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:106px; height:75px; left:505px; top:11px;"
+			imagestyle="display:none" brandStyle="display:none"
+			productstyle="position:static; width:96px; max-height:46px; text-transform:uppercase; text-align:left; padding:0 5px; font:13px/15px 'EB Garamond', Georgia, serif; color:#212121; overflow:hidden;"
+			priceStyle="position:static; width:96px; text-align:left; padding:0 5px; font:18px/20px 'Oswald', Arial, sans-serif; color:#212121; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<a2:button class="sh728cta" width="94" height="25" style="position:absolute; left:616px; top:32px;"/>
+		<a2:selector name="left" width="20" height="24" style="position:absolute; left:409px; top:33px; z-index:999;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/arrow_s2_left.png"/>
+		<a2:selector name="right" width="20" height="24" style="position:absolute; left:477px; top:33px; z-index:999;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/arrow_s2_right.png"/>
+		<a2:selector name="pag_s2_off" width="10" height="10" style="position:absolute; left:65px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/pag_off_s2.png"/>
+		<a2:selector name="pag_s2_on" width="10" height="10" style="position:absolute; left:75px; top:63px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/728/pag_on_s2.png"/>
+	</a2:layer>
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<a2:thirdparty>
+		<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/35037/3706481/skeleton.js"> </SCRIPT>
+		<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/35037/3706480/skeleton.gif" BORDER="0" WIDTH="1" HEIGHT="1" ALT="" /></NOSCRIPT>
+	</a2:thirdparty>
+</a2:frame>
+
+<!-- 300 -->
+<a2:frame width="300" height="250" click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-jeans?cmp=DIS:_ANF_STH_DynamicDesktop">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> </link>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> </link>
+	<a2:timer name="group1_transition" ms="4000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_left" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_right" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_left" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_right" action="stop"/>
+	</a2:timer>
+	<a2:timer name="group2_transition" ms="8000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_left" action="stop"/>
+		<a2:eventhandler event="selected" from="group1_arrow_right" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_left" action="stop"/>
+		<a2:eventhandler event="selected" from="group2_arrow_right" action="stop"/>
+	</a2:timer>
+	<a2:timer name="scene_transition" ms="12000">
+		<a2:eventhandler event="selected" from="pag_s1_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_on" action="stop"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="stop"/>
+	</a2:timer>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/bg_s1.png"/>
+	<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/header_s1.png"/>
+	<a2:layer width="300" height="250" show="true" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene_transition" action="fadeOut" duration="1000"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="fadeOut" duration="500"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeIn" duration="500"/>
+		<a2:button width="300" height="250" style="position:absolute; left:0; top:0;"/>
+		<a2:layer width="300" height="250" show="true" style="position:absolute; left:0; top:0;"> <!-- jeans group 1 -->
+			<a2:eventhandler event="selected" from="group2_arrow_left" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group2_arrow_right" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group1_arrow_left" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="selected" from="group1_arrow_right" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="expired" from="group1_transition" action="fadeOut" duration="700"/>
+			<a2:eventhandler event="expired" from="group2_transition" action="fadeIn" duration="700"/>
+			<a2:button width="300" height="250" style="position:absolute; left:0; top:0;"/>
+			<a2:img name="group1_p1_off" width="65" height="175" style="position:absolute; left:13px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p1_superSkinny_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-super-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:13px; top:55px;">
+				<a2:eventhandler event="exited" from="group1_p1_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p1_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p1_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p1_superSkinny_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-super-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group1_p2_off" width="65" height="175" style="position:absolute; left:83px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p2_skinny_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:83px; top:55px;">
+				<a2:eventhandler event="exited" from="group1_p2_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p2_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p2_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p2_skinny_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-skinny-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group1_p3_off" width="65" height="175" style="position:absolute; left:153px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p3_slimStraight_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-slim-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:153px; top:55px;">
+				<a2:eventhandler event="exited" from="group1_p3_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p3_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p3_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p3_slimStraight_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-slim-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group1_p4_off" width="65" height="175" style="position:absolute; left:223px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p4_classicTapper_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:223px; top:55px;">
+				<a2:eventhandler event="exited" from="group1_p4_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group1_p4_off" action="fadeIn" duration="350"/>
+				<a2:img name="group1_p4_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group1_p4_classicTapper_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:selector name="group1_arrow_left" width="13" height="20" style="position:absolute; left:0; top:130px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/arrow_s1_left.png"/>
+			<a2:selector name="group1_arrow_right" width="13" height="20" style="position:absolute; right:0; top:130px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/arrow_s1_right.png"/>
+		</a2:layer> <!-- /jeans group 1 -->
+		<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;"> <!-- jeans group 2 -->
+			<a2:eventhandler event="selected" from="group1_arrow_left" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group1_arrow_right" action="fadeIn" duration="250"/>
+			<a2:eventhandler event="selected" from="group2_arrow_left" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="selected" from="group2_arrow_right" action="fadeOut" duration="250"/>
+			<a2:eventhandler event="expired" from="group1_transition" action="fadeIn" duration="700"/>
+			<a2:eventhandler event="expired" from="group2_transition" action="fadeOut" duration="700"/>
+			<a2:button width="300" height="250" style="position:absolute; left:0; top:0;"/>
+			<a2:img name="group2_p1_off" width="65" height="175" style="position:absolute; left:13px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p1_classicTapper_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:13px; top:55px;">
+				<a2:eventhandler event="exited" from="group2_p1_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p1_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p1_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p1_classicTapper_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-taper-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group2_p2_off" width="65" height="175" style="position:absolute; left:83px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p2_slimStraight_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:83px; top:55px;">
+				<a2:eventhandler event="exited" from="group2_p2_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p2_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p2_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p2_slimStraight_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-classic-straight-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group2_p3_off" width="65" height="175" style="position:absolute; left:153px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p3_boot_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-boot-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:153px; top:55px;">
+				<a2:eventhandler event="exited" from="group2_p3_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p3_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p3_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p3_boot_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-boot-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:img name="group2_p4_off" width="65" height="175" style="position:absolute; left:223px; top:55px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p4_joggers_mens_off.png"
+				click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-joggers-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+			/>
+			<a2:layer width="65" height="175" show="false" style="position:absolute; left:223px; top:55px;">
+				<a2:eventhandler event="exited" from="group2_p4_on" action="fadeOut" duration="350"/>
+				<a2:eventhandler event="entered" from="group2_p4_off" action="fadeIn" duration="350"/>
+				<a2:img name="group2_p4_on" width="65" height="175" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/group2_p4_joggers_mens_on.png"
+					click="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?http://www.abercrombie.com/shop/us/mens-joggers-jeans?cmp=DIS:_ANF_STH_DynamicDesktop"
+				/>
+			</a2:layer>
+			<a2:selector name="group2_arrow_left" width="13" height="20" style="position:absolute; left:0; top:130px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/arrow_s1_left.png"/>
+			<a2:selector name="group2_arrow_right" width="13" height="20" style="position:absolute; right:0; top:130px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/arrow_s1_right.png"/>
+		</a2:layer> <!-- /jeans group 2 -->
+		<a2:selector name="pag_s1_on" width="10" height="10" style="position:absolute; left:140px; top:235px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/pag_on.png"/>
+		<a2:selector name="pag_s1_off" width="10" height="10" style="position:absolute; left:150px; top:235px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/pag_off.png"/>
+	</a2:layer>
+	<a2:layer width="300" height="250" show="false" style="position:absolute; left:0; top:0;">
+		<a2:eventhandler event="expired" from="scene_transition" action="fadeIn" duration="1000"/>
+		<a2:eventhandler event="selected" from="pag_s1_off" action="fadeIn" duration="500"/>
+		<a2:eventhandler event="selected" from="pag_s2_off" action="fadeOut" duration="500"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/bg_s2.png"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/promo.png"/>
+		<a2:img width="300" height="250" style="position:absolute; left:0; top:0;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/${1:DATE}/${2:TICKET}/RT/300/disclaimer.png"/>
+		<a2:carousel name="carousel1" width="92" height="92" axisRotation="0" type="3d" maxDimension="92" count="5" radius="500" dppid="281"
+			cycle="1" cycleShowcaseDuration="2000" rotationDuration="750"
+			style="position:absolute; left:38px; top:115px; cursor:pointer; overflow:hidden;"
+			urlprefix="http://ad.doubleclick.net/ddm/clk/288037347;115019461;f?"
+			urlsuffix="cmp=DIS:_ANF_STH_DynamicDesktop"
+		>
+			<a2:eventhandler event="selected" from="left" action="next"/>
+			<a2:eventhandler event="selected" from="right" action="previous"/>
+			<a2:eventhandler event="selected" from="left" action="stop"/>
+			<a2:eventhandler event="selected" from="right" action="stop"/>
+			<a2:eventhandler event="expired" from="scene_transition" action="start"/>
+		</a2:carousel>
+		<a2:product style="position:absolute; width:128px; height:61px; left:150px; top:115px;"
+			imagestyle="display:none" brandStyle="display:none"
+			productstyle="position:static; width:118px; max-height:33px; text-transform:uppercase; text-align:left; padding:0 5px; font:14px/16px 'EB Garamond', Georgia, serif; color:#212121; overflow:hidden;"
+			priceStyle="position:static; width:118px; text-align:left; padding:0 5px; font:20px/22px 'Oswald', Arial, sans-serif; color:#212121; overflow:hidden;"
+		>
+			<a2:eventhandler from="carousel1" event="adunitChanged" action="updateAdunit" />
+		</a2:product>
+		<a2:button class="sh300cta" width="94" height="25" style="position:absolute; left:154px; top:182px;"/>
+		<a2:selector name="left" width="20" height="24" style="position:absolute; left:34px; top:150px; z-index:999;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/arrow_s2_left.png"/>
+		<a2:selector name="right" width="20" height="24" style="position:absolute; left:114px; top:150px; z-index:999;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/arrow_s2_right.png"/>
+		<a2:selector name="pag_s2_off" width="10" height="10" style="position:absolute; left:140px; top:235px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/pag_off.png"/>
+		<a2:selector name="pag_s2_on" width="10" height="10" style="position:absolute; left:150px; top:235px;" src="http://cdn1.steelhousemedia.com/files/docs/Abercrombie/20150109/3433/RT/300/pag_on.png"/>
+	</a2:layer>
+	<img src="\${http}://ad.doubleclick.net/ad/N3093.160517.STEELHOUSEMEDIA/B8485619.115019461;sz=1x1;ord=\${rand}?" border="0" width="1" height="1" alt="Advertisement"/>
+	<a2:thirdparty>
+		<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/35037/3706481/skeleton.js"> </SCRIPT>
+		<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/35037/3706480/skeleton.gif" BORDER="0" WIDTH="1" HEIGHT="1" ALT="" /></NOSCRIPT>
+	</a2:thirdparty>
+</a2:frame>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2747</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
