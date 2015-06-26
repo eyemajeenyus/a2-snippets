@@ -94,6 +94,10 @@ a25422 - Abercrombie summer template - all sizes - no countdown timer - https://
 
 a27366 - Abercrombie red summer template - all sizes - https://steelhouse.zendesk.com/agent/tickets/7366
 
+a2747 - Abercrombie jeans template - all sizes - https://steelhouse.zendesk.com/agent/tickets/747
+
+a26552 - Abercrombie single scene cart - all sizes - https://steelhouse.zendesk.com/agent/tickets/6552
+
 a25434 - Hollister summer template - all sizes - countdown timer - https://steelhouse.zendesk.com/agent/tickets/5434
 
 a25436 - Hollister summer template - all sizes - no countdown timer - https://steelhouse.zendesk.com/agent/tickets/5436
@@ -101,3 +105,8 @@ a25436 - Hollister summer template - all sizes - no countdown timer - https://st
 a2overtonscouple - Overtons couple video slingshot - https://steelhouse.zendesk.com/agent/tickets/5776
 
 a2overtonssunset - Overtons sunset video slingshot - https://steelhouse.zendesk.com/agent/tickets/5776
+
+
+
+
+
